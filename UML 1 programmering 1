@@ -1,0 +1,108 @@
+﻿// See https://aka.ms/new-console-template for more information
+// Console.WriteLine("Big Mamma Pizzaria");
+
+
+class Program
+{
+    static void Main()
+    {
+        PizzaStoreApp pizzaStoreApp = new PizzaStoreApp();
+
+        // Display main menu
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("Big Mamma Pizzaria - Main Menu");
+            Console.WriteLine("1.Order");
+            Console.WriteLine("2. Menu");
+            Console.WriteLine("3. Udgang");
+        }
+    }
+}
+
+class Ordre
+
+{
+    public void PlaceOrder()
+    {
+        Console.Clear();
+        Console.WriteLine("Angiv Order\n");
+        Console.WriteLine("Ordre er succesfuld!");
+    }
+
+    public void ViewMenu()
+    {
+        Console.Clear();
+        Console.WriteLine("Pizza Menu\n");
+        Console.WriteLine("Press Enter to return to the Main Menu...");
+    }
+}
+
+class Pizza
+{
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+
+    public Pizza(string name, decimal price)
+    {
+        Name = name;
+        Price = price;
+    }
+
+    public override string ToString()
+    {
+        return $"{Name} - {Price} 40 kr";
+    }
+}
+
+
+
+// Create pizzas for the menu
+var fck pizza = new Pizza("Fck", "kebab, salat, tomat, agurk", 70,);
+var pepperoni = new Pizza("Pepperoni", "Pepperoni, ost, dressing", 80,);
+var ananas pizza = new Pizza("kebab, ananas, svinekæd, dressing", 90,);
+
+// menu
+var menu = new Menu(new List<Pizza> { FCK Pizza, pepperoni, ananas pizza });
+
+// sælger
+var sælger = new Seller("Big Mamma Pizzeria", pepperoni);
+
+// ordre
+var order = PlaceOrder(new List<Pizza> { fck pizza, pepperoni });
+
+// Display order details
+Console.WriteLine(order);
+
+
+internal class kunde
+    {
+        private int Name { get; }
+        private int Adress { get; }
+        private int Email { get; }
+        private int Ordre { get; }
+        private int Telefon { get; }
+        private int Password { get; }
+
+        public kunde(string aName, int aAdress, string aEmail, string aOrdre, string aTelefon, string aPassword)
+        {
+            Name = aName
+                Adress = aAdress
+                Email = aEmail
+                Ordre = aOrdre
+                Telefon = aTelefon
+                Password = aPassword
+        {public override string ToString()
+    }
+}
+return $"Name:{Name},Adress: {Adress}, Email: {Email}, Ordre : {Ordre}, Telefon {Telefon} , Password {Password}
+
+class Menu
+{
+
+
+
+
+
+
+}
