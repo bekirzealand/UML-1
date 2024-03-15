@@ -9,13 +9,13 @@ class Program
         PizzaStoreApp pizzaStoreApp = new PizzaStoreApp();
 
         // Display main menu
-        while (true)
+        
         {
             Console.Clear();
             Console.WriteLine("Big Mamma Pizzaria - Main Menu");
-            Console.WriteLine("1.Order");
-            Console.WriteLine("2. Menu");
-            Console.WriteLine("3. Udgang");
+            Console.WriteLine("Ordre");
+            Console.WriteLine("Menu");
+            Console.WriteLine("exit");
         }
     }
 }
@@ -26,8 +26,8 @@ class Ordre
     public void PlaceOrder()
     {
         Console.Clear();
-        Console.WriteLine("Angiv Order\n");
-        Console.WriteLine("Ordre er succesfuld!");
+        Console.WriteLine("giv Order");
+        Console.WriteLine("Ordre is succesfull!");
     }
 
     public void ViewMenu()
